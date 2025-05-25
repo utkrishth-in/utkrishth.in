@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="UTKRISHTH">
+    <meta name="theme-color" content="#ed1c24">
+    <link rel="icon" href="assets/logo.png">
+
+    <title>UTKRISHTHPAGE</title>
+
+    <!-- Custom styles for this template -->
+	<style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;0,900;1,500;1,900&amp;display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;800&amp;display=swap');
+
+    /* BASICS */
+
+	:root {
+		--rounder: 0, 0, 0;
+		--maroon: 239, 0, 0;
+		--gold: 194, 139, 36;
+        --dark: 13, 13, 13;
+        --beige: 249, 207, 159;
+        --white: 255, 255, 255;
+	}
+	body {
+		font-family: 'Dosis', sans-serif;
+		color: rgb(var(--rounder));
+		background-color: rgb(var(--beige));
+        background-image: linear-gradient(rgba(249, 207, 159, 0.9), rgba(249, 207, 159, 0.9)),url(assets/topotrans.png);
+        background-size: 100%;
+        scrollbar-color: rgb(var(--gold)) rgb(var(--dark));
+	}
+	.textbox h1, h2, h3, h4 {
+		font-family: 'Barlow', sans-serif;
+        font-weight:500;
+	}
+	a {
+		color: rgb(var(--rounder));
+	}
+	a:hover {
+		color: rgb(var(--white));
+	}
+
+    /* LAYOUT */
+
+    .title {
+        font-size: 15rem;
+        font-family: 'Barlow', sans-serif;
+        font-weight:800;
+        position: relative;
+        top: -5rem;
+        left: -1rem;
+		text-decoration: underline;
+    }
+
+	b {
+		color: rgb(0,0,0);
+	}
+
+	.textbox {
+		box-shadow: 0px 0px 20px rgba(0,0,0,.60);
+		display: block;
+		max-width: 70%;
+		padding: 1rem;
+		background: #09060691;
+		margin: auto;
+		margin-top: -5rem;
+		border-radius: 3px;
+		font-size: 125%;
+	}
+	hr {
+		border-color: #000000;
+	}
+    @keyframes spinny {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(360deg);}
+    }
+	</style>
+  </head>
+
+  <body>
+    <div class="title">
+        <a href="index-2.html">UTKRISHTH</a>
+    </div>
+	<div class="textbox">
+		<img src="assets/floater.png" style="max-width: 300px; float: right; border-radius: 0.5rem;" data-tilt>
+		<h1>'UTKRISHTH'</h1>
+		<b>KNOWN ALIASES:</b> UTKRISHTH, PAGER, TAILS
+		<br>
+		<b>AGE:</b> <span id="age"></span>
+		<br>
+		<b>OCCUPATION:</b> Programmer, Graphic Designer, Cook, Cat.
+		<br>
+		<b>AREAS OF ACTIVITY:</b> Rarely, on the OSDEV community, or the SCP community on Discord
+		<hr>
+		Hi! I'm Utkrishth, an amatuer programmer and graphic designer. I'm <span id="age2"></span>, and I've been programming for about 5 years now, yes, 5 years.
+		<br><br>
+		I have a particular weakness for hard science fiction, space horror, analog horror, SCP and such. As you might've guessed, I make websites and stuff. I also make small stupid projects sometimes <a href="other.html">(here)</a>, and I'm trying to learn more, expand my skillset.
+		<br><br>
+		I can program in Python, C, React and some others. Thank you for visiting and being interested in my work. It means a lot. If you want to get into contact with me for making websites or software or just to chat, you can hit me up at <a href="mailto:utkrishthanand@gmail.com">utkrishthanand@gmail.com</a> or <a href="mailto:krishkracks@gmail.com">krishkracks@gmail.com</a>.
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+	<script>
+		var dateobj = new Date();
+        var year = dateobj.getFullYear();
+		let x = year - 2012;
+        document.getElementById("age").innerHTML = x;
+		document.getElementById("age2").innerHTML = x;
+	</script>
+</body>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="UTKRISHTH">
+    <meta name="theme-color" content="#ed1c24">
+    <link rel="icon" href="assets/logo.png">
+
+    <title>UTKRISHTHPAGE</title>
+
+	    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  
+    <!-- Custom styles for this template -->
+	<style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;0,900;1,500;1,900&amp;display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;800&amp;display=swap');
+
+    /* BASICS */
+
+	:root {
+		--rounder: 0, 0, 0;
+		--maroon: 239, 0, 0;
+		--gold: 194, 139, 36;
+        --dark: 13, 13, 13;
+        --beige: 249, 207, 159;
+        --white: 255, 255, 255;
+	}
+	body {
+		font-family: 'Dosis', sans-serif;
+		color: rgb(var(--rounder));
+		background-color: rgb(var(--beige));
+        background-image: linear-gradient(rgba(249, 207, 159, 0.9), rgba(249, 207, 159, 0.9)),url(assets/topotrans.png);
+        background-size: 100%;
+        scrollbar-color: rgb(var(--gold)) rgb(var(--dark));
+	}
+	.textbox h1, h2, h3, h4 {
+		font-family: 'Barlow', sans-serif;
+        font-weight:500;
+	}
+	a {
+		color: rgb(var(--rounder));
+	}
+	a:hover {
+		color: rgb(var(--white));
+	}
+
+    /* LAYOUT */
+
+    .title {
+        font-size: 15rem;
+        font-family: 'Barlow', sans-serif;
+        font-weight:800;
+        position: relative;
+        top: -7rem;
+        left: -1rem;
+		text-decoration: underline;
+    }
+
+	.textbox {
+		box-shadow: 0px 0px 20px rgba(0,0,0,.60);
+		display: block;
+		max-width: 70%;
+		padding: 1rem;
+		background: #09060691;
+		margin: auto;
+		margin-top: -5rem;
+		border-radius: 3px;
+		font-size: 125%;
+	}
+	hr {
+		border-color: #09060691;
+	}
+
+    @keyframes spinny {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(360deg);}
+    }
+
+	.modal-content {
+		background: #353535;
+	}
+
+	.contrast {
+		background: #2020209e;
+		padding: 5px;
+		border-radius: 3px;
+	}
+	.writingbox {
+		display: grid;
+		grid-template-columns: repeat(1fr, 2);
+		grid-template-rows: auto;
+		grid-template-areas: 'scp blurb';
+		grid-gap: 0.5rem;
+		}
+	.scp {
+		grid-area: scp;
+		max-width: 350;
+		justify-self: center;
+	}
+	.blurb {
+		grid-area: blurb;
+	}
+	.redside {
+		border-left: 5px solid rgb(var(--maroon));
+	}
+	.goldside {
+		border-left: 5px solid rgb(var(--gold));
+	}
+	hr {
+	border-top: 1px solid rgba(0, 0, 0, 0.69);
+	}
+	
+.item {
+	display: block;
+	max-width: 20%;
+	margin: 1rem;
+}
+.item img{max-width:100%;}
+	
+	@keyframes rock {
+	  from {transform: rotate(15deg)}
+	  to {transform: rotate(-15deg)}
+	}
+	
+	@keyframes emph {
+	  from {transform: rotate(0deg); background: #403636db;}
+	  to {transform: rotate(7deg); background: #403636;}
+	}
+	</style>
+  </head>
+
+</style>
+</head>
+
+<body>
+  <div class="title">
+	  <a href="index-2.html">UTKRISHTH</a>
+  </div>
+
+    <main role="main" class="textbox">
+		<img src="assets/valern.jpg" style="max-width: 400px; float: right; border-radius: 0.5rem;" data-tilt>
+        <h1>VALERN</h1>
+		<hr>
+      	</div>
+	  	<h3>WHAT</h2>
+		<b>ARCHITECTURE:</b> x86-64
+		<br>
+		<b>LANGUAGES:</b> C and Assembly
+		<br>
+		<b>BOOTLOADER:</b> Limine
+		<br><br>
+		Valern is a small 64 bit operating system, being made for purpose of learning.
+		<hr>
+		<h3>WHY</h2>
+		for... <del>torture</del> fun and learning (also because I can)<br>
+		such projects are very interesting to me and help me learn<br>
+		bootloaders and kernels are weirdly complex, and cool.<br>
+		<hr>
+		<h3>WHERE</h2>
+		The source code for Valern is available at
+		<a href="https://github.com/kanata-05/valern" style="text-decoration: underline;">Github</a> or
+		<a href="https://github.com/kanata-05/valern/archive/refs/heads/main.zip" style="text-decoration: underline;">Download ZIP</a> <br><br>
+
+		The source code is licensed under the BSD-3 Clause License, All redistributions<br>
+		require the license and copyright notice to be packed with the OS.
+
+</div>
+		</section>
+    </main><!-- /.container -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script>
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+	</script>
+</body>

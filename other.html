@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="UTKRISHTH">
+    <meta name="theme-color" content="#ed1c24">
+    <link rel="icon" href="assets/logo.png">
+
+    <title>UTKRISHTHPAGE</title>
+
+    <!-- Custom styles for this template -->
+	<style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;0,900;1,500;1,900&amp;display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;800&amp;display=swap');
+
+    /* BASICS */
+
+	:root {
+		--rounder: 0, 0, 0;
+		--maroon: 239, 0, 0;
+		--gold: 194, 139, 36;
+        --dark: 13, 13, 13;
+        --beige: 249, 207, 159;
+        --white: 255, 255, 255;
+	}
+	body {
+		color: rgb(var(--rounder));
+		background-color: rgb(var(--beige));
+        background-image: linear-gradient(rgba(249, 207, 159, 0.9), rgba(249, 207, 159, 0.9)),url(assets/topotrans.png);
+        background-size: 100%;
+        scrollbar-color: rgb(var(--gold)) rgb(var(--dark));
+	}
+	.textbox h1, h2, h3, h4 {
+		font-family: 'Barlow', sans-serif;
+        font-weight:500;
+	}
+	a {
+		color: rgb(var(--rounder));
+	}
+	a:hover {
+		color: rgb(var(--white));
+	}
+	p {
+		font-family: 'Barlow', sans-serif;
+		font-weight:300
+	}
+
+    /* LAYOUT */
+
+    .title {
+        font-size: 15rem;
+        font-family: 'Barlow', sans-serif;
+        font-weight:800;
+        position: relative;
+        top: -5rem;
+        left: -1rem;
+		text-decoration: underline;
+    }
+
+	.textbox {
+		box-shadow: 0px 0px 20px rgba(0,0,0,.60);
+		display: block;
+		max-width: 70%;
+		padding: 1rem;
+		background: #09060691;
+		margin: auto;
+		margin-top: -5rem;
+		border-radius: 3px;
+		font-size: 125%;
+	}
+	hr {
+		border-color: #000000;
+	}
+
+    @keyframes spinny {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(360deg);}
+    }
+	</style>
+  </head>
+
+  <body>
+    <div class="title">
+        <a href="index-2.html">UTKRISHTH</a>
+    </div>
+	<div class="textbox">
+		<h1>ASSORTED PROJECTS</h1>
+		<p>This is a nice small list of other projects that I made! Most of these are just small, simple projects made for fun.</p>
+		<hr>
+
+		<img src="assets/pi-at-home.png" style="max-width: 350px; float: right; margin:0.7rem; border-radius: 10px;" onclick="window.location.href='assets/pi-at-home.png'">
+		<h2>PIE@HOME</h2>
+		<p>pie@home is a volunteer computing project to calcuate pi, it's being written in C, currently stopped progress for other projects and work.
+			it is one of my biggest attempted projects, i <b>will</b> come back and finish this masterpiece.<br>
+		   <a href="https://github.com/kanata-05/pie-at-home/blob/main/README.md">(READ MORE)</a></p><br>
+		<h2>SOURCE CODE</h2>
+		<p>Source code for this is available on <a href="https://github.com/kanata-05/pie-at-home">Github</a></p>
+
+		<hr style="clear: right;">
+		
+		<div style="float: right; text-align: center; margin:0.6rem;">
+    	<img src="assets/scp-api.webp" style="max-width: 350px; border-radius: 10px;" onclick="window.location.href='assets/scp-api.webp'">
+    		<div style="font-family: 'Barlow', sans-serif; font-size: 0.8em; margin-top: 0.3rem;">SCP-API implemented in a discord bot.</div>
+		</div>
+		<h2>SCP-API</h2>
+		<p>This is an API that can fetch all information about all SCPS (ok maybe not the last few), but it's made in python, it first fetches data from the <a href="http://scp-wiki.wikidot.com/">SCP wikidot</a> and stores it in a github repo as json, then whenever it needs to be fetched, it fetches from the github repo, not the wikidot (inorder to prevent load). <br><br> You can use this with pip <code>`pip install scpfetch`</code>, <br>Documentation is available at <a href="https://github.com/kanata-05/SCP-API/blob/main/README.md">Github</a></p><br>
+		
+		<hr style="clear: right;">
+
+		<img src="assets/mandelbrot2.webp" style="max-width: 300px; max-height: 340px; float: right; margin:0.6rem; border-radius: 10px;" onclick="window.location.href='assets/mandelbrot2.webp'">
+		<img src="assets/mandelbrot.webp" style="max-width: 300px; float: right; margin:0.6rem; border-radius: 10px;" onclick="window.location.href='assets/mandelbrot.webp'">
+		<h2>MANDELBROT VISUALIZER</h2>
+		<p>I made this because fractals are cool, it's made in C with SDL2 and love.</p><br>
+		<h2>SOURCE CODE</h2>
+		<p>Source code for this is available on <a href="https://github.com/kanata-05/mandelbrot">Github</a></p>
+		
+		<hr style="clear: right;">
+				
+		<img src="assets/ir.png" style="max-width: 300px; max-height: 340px; float: right; margin:0.6rem; border-radius: 10px;" onclick="window.location.href='assets/ir.png'">
+		<h2>Image Recognition</h2>
+		<p>Capable of recognizing objects in images however, not the best, may give vague terms like "Bird",
+		   Uses pre-trained YOLO and CLIP models (yes i know).</p><br>
+		<h2>SOURCE CODE</h2>
+		<p>Source code for this is available on <a href="https://github.com/kanata-05/image-recognition">Github</a></p>
+		
+		<hr style="clear: right;">
+	</div>
+</body>
